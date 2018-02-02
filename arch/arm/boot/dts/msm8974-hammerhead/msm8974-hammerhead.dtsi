@@ -121,6 +121,18 @@
 		qcom,taiko-mclk-clk-freq = <9600000>;
 	};
 
+	wcd9xxx: qcom,wcd9xxx-snd-ctrl {
+		status = "ok";
+		qcom,codec_name = "taiko_codec";
+		qcom,mic_line = <0x251>;
+		qcom,cam_mic_line = <0x249>;
+		qcom,speaker_l_line = <0x2e7>;
+		qcom,speaker_r_line = <0x2e7>;
+		qcom,headphone_l_line = <0x2b7>;
+		qcom,headphone_r_line = <0x2bf>;
+		qcom,default_gain = <5 5 8 8 3 3>;
+	};
+
 	maxim_detic:maxim_max1462x {
 		compatible = "maxim,max1462x";
 		status = "ok";
